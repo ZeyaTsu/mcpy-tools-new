@@ -55,3 +55,17 @@ def volume(x_coords, z_coords, y_coords,second_x_coords, second_y_coords, second
     return volume
 
 
+"""
+stronghold code
+"""
+
+def first_stronghold_step(first_angle:float, facing:str):
+    match facing:
+        case 'north':
+            coords = -310
+        case 'south':
+            coords = 310
+        case 'west':
+            coords = -310
+        case 'east':
+            coords = 310
