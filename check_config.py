@@ -36,5 +36,3 @@ def config_checker():
         print(modding_color + "MOD:", name, version, features, author)
     else:
         print(no_mod + "No mod loaded." + default)
-        
-
