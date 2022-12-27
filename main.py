@@ -1,10 +1,22 @@
 import colorama
 from colorama import Fore, Back, Style
 import time
+import check_config
 
 import features.stronghold_finder
 import features.mineshaft_finder
 import features.chunk_blocks
+import features.distance
+
+from configparser import ConfigParser
+config = ConfigParser()
+config.read("mod.ini")
+
+modded = False
+if config.has_section("MOD") == True:
+    modded = True
+    import features.mcpy_mod
+
 
 colorama.init()
 fc = Fore.CYAN
@@ -78,7 +90,11 @@ def menu():
                 
 def main():
     print(fc,mcpy,default)
-    menu()
+    check_config.config_checker()
+    if modded == False:
+        menu()
+    else: 
+        features.mcpy_mod.mod_main()
 
 if __name__ == '__main__':
     main()
