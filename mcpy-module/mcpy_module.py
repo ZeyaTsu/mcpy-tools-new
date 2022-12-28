@@ -1,6 +1,7 @@
 """
 mcpytools-module-version
 """
+import math
 
 def convert_chunks_blocks(block=None, chunk=None):
     if block != None and chunk == None:
@@ -52,20 +53,24 @@ def volume(x_coords, z_coords, y_coords,second_x_coords, second_y_coords, second
     z_fi += 1
 
     volume = x_fi * z_fi * y_fi
-    return volume
+    return 
 
+def distance(first_x_coords, first_z_coords, second_x_coords, second_z_coords, walking_method):
+    if walking_method == "run":
+            vel = 5.6
+    if walking_method == "elyta":
+            vel = 7.2
+        
+    vector_x = second_x_coords - first_x_coords
+    if vector_x < 0:
+        vector_x *= -1
+    vector_x += 1
 
-"""
-stronghold code
-"""
+    vector_z = second_z_coords - first_z_coords
+    if vector_z < 0:
+        vector_z *= -1
+    vector_z += 1
 
-def first_stronghold_step(first_angle:float, facing:str):
-    match facing:
-        case 'north':
-            coords = -310
-        case 'south':
-            coords = 310
-        case 'west':
-            coords = -310
-        case 'east':
-            coords = 310
+    distance = int(math.sqrt((vector_x - 2)**2 + (vector_z -2)**2))
+    time = distance // vel
+    return time
