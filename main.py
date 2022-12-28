@@ -7,6 +7,10 @@ import features.stronghold_finder
 import features.mineshaft_finder
 import features.chunk_blocks
 import features.distance
+import features.volume
+import features.perimeter
+import features.levels_ore
+import features.commands
 
 from configparser import ConfigParser
 config = ConfigParser()
