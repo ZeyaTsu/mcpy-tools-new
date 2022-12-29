@@ -1,7 +1,7 @@
 # MCPy-Tools-New
 ### The new MCPy-Tools version. Minecraft Tools using Python. You can find useful tools such as Stronghold finder, Perimeter/volume calculation, Command generator, Mineshaft finder and more.
 
-* Open main.py to start the app.
+* Open main.py to start the app or use the discord bot <a href="https://discord.com/api/oauth2/authorize?client_id=1058013787141185606&permissions=8&scope=bot"> here </a>.
 
 ## Tools available
 * Perimeter - Calculate a perimeter.
