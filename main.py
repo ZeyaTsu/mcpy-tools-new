@@ -11,6 +11,7 @@ import features.volume
 import features.perimeter
 import features.levels_ore
 import features.commands
+import features.worlds
 
 from configparser import ConfigParser
 config = ConfigParser()
@@ -67,6 +68,7 @@ def menu():
     print("6 · Chunk <=> Blocks")
     print("7 · Y Levels for ores")
     print("8 · CanPlace/Destroy command")
+    print("9 · World level.dat editor/reader")
 
     choice = True
     while choice:
@@ -90,6 +92,8 @@ def menu():
                 features.levels_ore.ore()
             case '8':
                 features.commands.canplacedestroy()
+            case '9':
+                features.worlds.nbt_onread()
             
                 
 def main():
