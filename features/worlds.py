@@ -67,16 +67,18 @@ def nbt_onedit():
     global user_path
     print(instructions_color + "Which value do you want to edit ?\n(Example:WabderubgTraderSpawnChance)" + default)   
     user_edit_nbt = str(input("> "))
-    user_edit_nbt_value = input(f"New {user_edit_nbt} value > ")
-
-    try:
-        user_edit_nbt_value = int(user_edit_nbt_value)
-    except ValueError:
+    if user_edit_nbt == "LevelName":
+        user_edit_nbt_value = str(input(f"New {user_edit_nbt} name > "))
+    else:
+        user_edit_nbt_value = input(f"New {user_edit_nbt} value > ")
         try:
-            user_edit_nbt_value = float(user_edit_nbt_value)
+            user_edit_nbt_value = int(user_edit_nbt_value)
         except ValueError:
-            print(Fore.RED + "     Input cannot be a string")
-            nbt_onedit()
+            try:
+                user_edit_nbt_value = float(user_edit_nbt_value)
+            except ValueError:
+                print(Fore.RED + "     Value cannot be a string")
+                nbt_onedit()
 
     nbtfile = nbt.NBTFile(user_path, 'rb')
     try:
