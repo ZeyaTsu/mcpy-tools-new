@@ -20,7 +20,7 @@ def perimeter():
     vector_x = second_x_coords - first_x_coords
     if vector_x < 0:
         vector_x *= -1
-    vector_x += 1
+    #vector_x += 1
 
     vector_y = second_y_coords - first_y_coords
     if vector_y < 0:
@@ -30,7 +30,7 @@ def perimeter():
     vector_z = second_z_coords - first_z_coords
     if vector_z < 0:
         vector_z *= -1
-    vector_z += 1
+    #vector_z += 1
 
     perimeter = ((vector_z + vector_x)*2)*vector_y 
     print(instructions_color + f"The perimeter is {perimeter} blocks" + default)
