@@ -15,3 +15,10 @@
 * CanPlaceOn & CanDestroy - Command generator to give item that can destroy/be placed on specific block.
 
 # Learn how to mod/create an extension to MCPy-Tools <a href="https://github.com/ZeyaTsu/mcpy-tools-new/wiki/How-to-mod-MCPy-Tools" target="_blank"> here </a>
+
+# Planned / Doing
+| Python | Doing |
+| --- | --- |
+| Web/WebApp | Planned | 
+| GUI | Planned |
+| Minecraft Mod | TBD | 
