@@ -21,7 +21,7 @@ def perimeter(x_coords, z_coords, y_coords,second_x_coords, second_y_coords, sec
     x_fi = x_coords - second_x_coords
     if x_fi < 0:
         x_fi *= -1
-    x_fi += 1
+    #x_fi += 1
 
     y_fi = y_coords - second_y_coords
     if y_fi < 0:
@@ -31,7 +31,7 @@ def perimeter(x_coords, z_coords, y_coords,second_x_coords, second_y_coords, sec
     z_fi = z_coords - second_z_coords
     if z_fi < 0:
         z_fi *= -1
-    z_fi += 1
+    #z_fi += 1
 
     perimeter = 2*(x_fi + z_fi) * y_fi
     return perimeter
