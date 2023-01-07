@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/x-icon" href="mcpy_logo.ico">
+        <title>MCPy-Tools</title>
+    </head>
+    
+        <header>       
+        </header>
+    
+        <body>   
+            <nav class="navbar">
+                <ul class="navbar-nav">                 
+                    <li class="nav-item-logo"> <img id="logo-png" src="mcpy_logo.png"/> </li>      
+                    <div class="container-list">
+                        <a href="https://github.com/ZeyaTsu/mcpy-tools-new/pages/volume">
+                            <li class="nav-item"><h1>Volume</h1></li>
+                        </a>
+                        <a href="https://github.com/ZeyaTsu/mcpy-tools-new/pages/leveldat">
+                            <li class="nav-item"><h1>Level.dat</h1></li>
+                        </a>
+                        <a href="https://github.com/ZeyaTsu/mcpy-tools-new/pages/perimeter">
+                            <li class="nav-item"><h1>Perimeter</h1></li>
+                        </a>
+                        <a href="https://github.com/ZeyaTsu/mcpy-tools-new/pages/bestylevel>
+                            <li class="nav-item"><h1>Best Y Level</h1></li>
+                        </a>
+                        <a href="https://github.com/ZeyaTsu/mcpy-tools-new/pages/mineshaft">
+                            <li class="nav-item"><h1>Mineshaft Mirror</h1></li>
+                        </a>
+                        <a href="https://github.com/ZeyaTsu/mcpy-tools-new/pages/stronghold">
+                            <li class="nav-item"><h1>Stronghold Finder</h1></li>
+                        </a>
+                        <a href="https://github.com/ZeyaTsu/mcpy-tools-new/pages/converter">
+                            <li class="nav-item"><h1>Blocks <=> Chunks</h1></li> 
+                        </a>  
+                        <a href="https://github.com/ZeyaTsu/mcpy-tools-new/releases" target="_blank">                  
+                            <li class="nav-item"><h3>Github <br/> <span id=discret>Made by ZeyaTsu</span></h3></li>
+                        </a>
+                    </div>
+                </ul>
+            </nav>  
+            <main>
+                <!--<h1>Value1: <input type="number" id="n1"></h1>
+                <h1>Value2: <input type="number" id="n2"></h1>
+                <button type="button" onclick="sum();">Calculate</button>
+                <h1>Sum is <span id="result"> </span></h1>-->
+                <p id="title-page">Volume</p>
+                <p id="description">Calculate a volume from coords.</p>
+
+                <div class="container-box">
+                    <div class="first-coords">
+                        <p id="value">From X: <input type="number" id="first_x"></p>
+                        <p id="value">From Y: <input type="number" id="first_y"></p>
+                        <p id="value">From Z: <input type="number" id="first_z"></p>
+                    </div>
+                    <div class="second-coords">
+                        <p id="value">To X: <input type="number" id="second_x"></p>
+                        <p id="value">To Y: <input type="number" id="second_y"></p>
+                        <p id="value">To Z: <input type="number" id="second_z"></p>
+                    </div>
+                </div>
+                <button type="button" onclick="volume();">Calculate</button>
+                <p id="value">The volume is <span id="volume-result">0</span> blocks.</p>
+                <script src="script.js"></script>
+            </main>
+        </body>
+    
+        <footer>         
+        </footer>
+</html>
