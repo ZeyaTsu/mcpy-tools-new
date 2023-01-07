@@ -9,55 +9,26 @@
     text-decoration: none;
 }
 #logo-png {
-    width: 8rem;
+    width: 5rem;
 }
-.navbar {
-    width: 10rem;
-    height: 100vh;
-    position: fixed;
-    background-color: rgb(41, 41, 41);
-    background-color: rgb(223, 211, 195);
+header {
+    background-color: #d9cdbc;
 }
-.navbar-nav {
+ul {
+    font-weight: bold;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;  
 }
-
-.nav-item, .nav-item-logo {
-    padding-top: 1rem;
-    margin-bottom: 2rem;
+#item {
+    color: rgb(103, 99, 93);
     transition: 0.2s;
 }
-.nav-item:hover {
+#item:hover {
     color: black;
-    opacity: 0.7;
-}
-.nav-item-logo {
-    margin-left: 1rem;
-}
-.container-list, a {
-    font-weight: bold;
-    color: rgb(103, 99, 93);
-    width: 100%;
-    background-color: rgb(217, 205, 188);
-    height: 100vh;
-}
-h1 {
-    margin-left: 1rem;
-    margin-right: 2rem;
-    font-size: 1.1rem;
-}
-h3 {
-    margin-left: 1rem;
-    margin-right: 2rem;
-    font-size: 1.1rem;
-    margin-top: 12vh;
-}
-#discret {
-    font-size: 0.7rem;
-    opacity: 0.5;
+    opacity:  0.7;
 }
