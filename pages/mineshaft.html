@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/x-icon" href="mcpy_logo.ico">
+        <title>MCPy-Tools</title>
+    </head>
+    
+        <header>
+            <div class="container-head">
+                <ul>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new">
+                        <li> <img id="logo-png" src="mcpy_logo.png" /></li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/volume">
+                        <li id="item">Volume</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/leveldat">
+                        <li id="item">Level.dat</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/perimeter">
+                        <li id="item">Perimeter</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/bestylevel">
+                        <li id="item">Best Y Level</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/mineshaft">
+                        <li id="item">Mineshaft Mirror</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/stronghold">
+                        <li id="item">Stronghold Finder</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/converter">
+                        <li id="item">Blocks2Chunks</li>
+                    </a>
+                    <a href="https://github.com/ZeyaTsu/mcpy-tools-new/releases" target="_blank">
+                        <li id="item">Github</li>
+                    </a>              
+                </ul>
+            </div>       
+        </header>
+    
+        <body> 
+            <p id="title-page">Mineshaft Mirror</p>
+            <p id="description">Find another mineshaft by finding a mineshaft.</p>
+
+            <div class="container-box">
+                <div class="first-coords">
+                    <p id="value">First Mineshaft X: <input type="number" id="first_x"></p>
+                    <p id="value">First Mineshaft Z: <input type="number" id="first_z"></p>
+                </div>
+            </div>
+            <div class="container-other">
+                <button type="button" onclick="mineshaft();">Calculate</button>
+                <p id="value">The second mineshaft is at X: <span id="x-coords"></span> Z: <span id="z-coords"></span></p>
+                <script src="script.js"></script>
+            </div>
+        </body>
+    
+        <footer>         
+        </footer>
+</html>
