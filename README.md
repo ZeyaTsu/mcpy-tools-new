@@ -19,6 +19,6 @@
 # Planned / Doing
 | Python | Doing |
 | --- | --- |
-| Web/WebApp | Planned | 
-| GUI | Planned |
+| Web/WebApp | Doing (todo:leveldat,ylevel,mineshaft,stronghold) | 
+| GUI | TBD |
 | Minecraft Mod | TBD | 
