@@ -9,74 +9,30 @@
     text-decoration: none;
 }
 #logo-png {
-    width: 8rem;
+    width: 5rem;
 }
-.navbar {
-    width: 10rem;
-    height: 100vh;
-    position: fixed;
-    background-color: rgb(41, 41, 41);
-    background-color: rgb(223, 211, 195);
+header {
+    background-color: #d9cdbc;
 }
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.nav-item, .nav-item-logo {
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-    transition: 0.2s;
-}
-.nav-item:hover {
-    color: black;
-    opacity: 0.7;
-}
-.nav-item-logo {
-    margin-left: 1rem;
-}
-.container-list, a {
+ul {
     font-weight: bold;
-    color: rgb(103, 99, 93);
-    width: 100%;
-    background-color: rgb(217, 205, 188);
-    height: 100vh;
-}
-h1 {
-    margin-left: 1rem;
-    margin-right: 2rem;
-    font-size: 1.1rem;
-}
-h3 {
-    margin-left: 1rem;
-    margin-right: 2rem;
-    font-size: 1.1rem;
-    margin-top: 12vh;
-}
-#discret {
-    font-size: 0.7rem;
-    opacity: 0.5;
-}
-
-main {
-    margin-left: 25rem;
-    margin-top: 1rem;
-    padding: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 1rem;  
+}
+#item {
+    color: rgb(103, 99, 93);
+    transition: 0.2s;
+}
+#item:hover {
+    color: black;
+    opacity:  0.7;
 }
 
-body {
-    display: flex;
-}
 #title-page {
     text-align: center;
     font-size: 5rem;
@@ -101,4 +57,21 @@ body {
 #value {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+.container-other {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: rgb(0, 115, 255);
+    width: 7em;
+    height: 2rem;
+    border-radius: 100px;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
 }
