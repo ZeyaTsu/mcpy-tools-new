@@ -93,3 +93,10 @@ button {
     justify-content: center;
     align-items: center;
 }
+#value-page {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#value-forgotten-bis {
+    margin-bottom: 1rem;
+}
