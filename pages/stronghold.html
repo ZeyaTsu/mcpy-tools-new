@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" type="image/x-icon" href="mcpy_logo.ico">
+        <title>MCPy-Tools</title>
+    </head>
+    
+        <header>
+            <div class="container-head">
+                <ul>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new">
+                        <li> <img id="logo-png" src="mcpy_logo.png" /></li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/volume">
+                        <li id="item">Volume</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/leveldat">
+                        <li id="item">Level.dat</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/perimeter">
+                        <li id="item">Perimeter</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/bestylevel">
+                        <li id="item">Best Y Level</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/mineshaft">
+                        <li id="item">Mineshaft Mirror</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/stronghold">
+                        <li id="item">Stronghold Finder</li>
+                    </a>
+                    <a href="https://zeyatsu.github.io/mcpy-tools-new/pages/converter">
+                        <li id="item">Blocks2Chunks</li>
+                    </a>
+                    <a href="https://github.com/ZeyaTsu/mcpy-tools-new/releases" target="_blank">
+                        <li id="item">Github</li>
+                    </a>              
+                </ul>
+            </div>       
+        </header>
+    
+        <body>   
+            <p id="title-page">Stronghold Finder</p>
+            <p id="description">Find stronghold, requires 2 Ender eye.</p>
+
+            <div class="container-box-forgotten">
+                <div class="first-coords">
+                    <p id="text">Follow the steps to get the correct coordinates.</p>
+                    <p id="text">1. Go to X:0 and Z:0 (Press F3 to show coordinates)</p>
+                    <p id="text">2. Throw an ender eye, look at the center of it and look at 'Facing' Section.</p>
+                    <p id="text">Write down the Facing (North,south,west or east) and the first number after it.</p>
+                    <p id="text">E.g: Facing: north (Towards negative Z) (xxx <- this number)</p>
+                    <p id="text">Write that number here. (The most you look to the center of it, the most accurate it is.)</p>
+                </div>
+                
+                <div class="second-coords">
+                    <p id="value">First Angle: <input type="number" id="first_angle"></p>
+                    Facing: <select id="list">
+                        <option value="none">None</option>
+                        <option value="north">North</option>
+                        <option value="south">South</option>
+                        <option value="east">East</option>
+                        <option value="west">West</option> 
+                    </select>
+                    <button type="button" onclick="stronghold();">Enter</button>
+                    <p id="value"><span id="step"></span></p>
+                    <p id="value">Second Angle: <input type="number" id="second_angle"></p>
+                </div>
+            </div>
+            <div class="container-other">
+                <button type="button" onclick="stronghold();">Calculate</button>
+                <p id="value-forgotten">Stronghold found!</p>
+                <p id="value">X: <span id="x_coords"></span> Z: <span id="z_coords"></span></p>
+                <script src="script.js"></script>
+            </div>
+        </body>
+    
+        <footer>         
+        </footer>
+</html>
