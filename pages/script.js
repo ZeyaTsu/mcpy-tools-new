@@ -138,6 +138,7 @@ function stronghold(){
         var xNorthFind = -(coords / (Math.tan(h1) - Math.tan(h2)))
         var zNorthFind = (coords * Math.tan(h1)) / (Math.tan(h1) - Math.tan(h2))
 
+        document.getElementById('phrase').innerHTML = "Stronghold found!"
         document.getElementById('x_coords').innerHTML = xNorthFind
         document.getElementById('z_coords').innerHTML = zNorthFind
     }
@@ -150,6 +151,7 @@ function stronghold(){
         var xWestFind = (coords * Math.tan(h3)) / (Math.tan(h3) - Math.tan(h4))
         var zWestFind = -(coords / (Math.atan(h3) - Math.tan(h4)))
 
+        document.getElementById('phrase').innerHTML = "Stronghold found!"
         document.getElementById('x_coords').innerHTML = xWestFind
         document.getElementById('z_coords').innerHTML = zWestFind
     }
