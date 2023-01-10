@@ -23,7 +23,7 @@
 | GUI | TBD |
 | Minecraft Mod | TBD | 
 
-# Other repositories concerning mcpy-tools
+# Other repositories concerning MCPy-Tools
 
 * <a href="https://github.com/ZeyaTsu/mcpy-tools-new-script-js">MCPy-Tools-new JS files</a>
 * <a href="https://github.com/ZeyaTsu/mcpy-tools">Old MCPy-Tools version</a>
