@@ -1,5 +1,5 @@
 # MCPy-Tools-New 
-## <a href="https://zeyatsu.github.io/documentation/mcpy/documentation">View documentation here</a>
+## <a href="https://yuaself.github.io/documentation/mcpy">View documentation here</a>
 `pip install -r requirements.txt`
 ### The new MCPy-Tools version. Minecraft Tools using Python. You can find useful tools such as Stronghold finder, Perimeter/volume calculation, Command generator, Mineshaft finder and more.
 
