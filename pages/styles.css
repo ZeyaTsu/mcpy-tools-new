@@ -11,6 +11,9 @@
 #logo-png {
     width: 5rem;
 }
+#blue {
+    color: rgb(0, 26, 255);
+}
 header {
     background-color: #d9cdbc;
 }
