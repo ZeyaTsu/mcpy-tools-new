@@ -19,9 +19,9 @@
 # Learn how to mod/create an extension to MCPy-Tools <a href="https://github.com/ZeyaTsu/mcpy-tools-new/wiki/How-to-mod-MCPy-Tools" target="_blank"> here </a>
 
 # Planned / Doing
-| Python | Doing |
+| Python | Done |
 | --- | --- |
-| Web/WebApp | Doing (todo:leveldat) | 
+| Web/WebApp | Doing (todo:leveldat, distance) | 
 | GUI | TBD |
 | Minecraft Mod | TBD | 
 
