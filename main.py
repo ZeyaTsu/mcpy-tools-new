@@ -50,7 +50,7 @@ def menu():
     print("6 · Chunk <=> Blocks | 7 · Y Levels for ores | 8 · CanPlace/Destroy command")
 
     print(fb+"- - - Worlds (File related) - - -"+default)
-    print("9 · World level.dat editor/reader | 10 · World stats editor/reader")
+    print("9 · World level.dat editor/reader | 10 · World stats editor/reader | 11 · Playerdata reader (editor coming soon)")
 
     choice = True
     while choice:
@@ -78,6 +78,8 @@ def menu():
                 features.worlds.nbt_onread()
             case '10':
                 features.worlds.stat_onread()
+            case '11':
+                features.worlds.playerdata_onread()
             
                 
 def main():
