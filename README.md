@@ -23,6 +23,16 @@
 
 # Learn how to mod/create an extension to MCPy-Tools <a href="https://github.com/ZeyaTsu/mcpy-tools-new/wiki/How-to-mod-MCPy-Tools" target="_blank"> here </a>
 
+# Screenshots
+## Main app
+![main](https://user-images.githubusercontent.com/43354103/212466354-eed69976-91cf-41a0-a9ef-78e429d49a84.JPG)
+## Level.dat editor/reader
+![leveldat](https://user-images.githubusercontent.com/43354103/212466359-adda73a4-c1c3-4eb6-8bed-b121045a3e4c.JPG)
+## Stats Editor/Reader
+![stats01](https://user-images.githubusercontent.com/43354103/212466363-955f3cf4-9956-491f-af5f-c9aa61e48103.JPG)
+![stats02](https://user-images.githubusercontent.com/43354103/212466364-21b8be74-a7b6-4634-a616-5c156b4c6c54.JPG)
+
+
 # Planned / Doing
 | Python | Done |
 | --- | --- |
