@@ -3,15 +3,7 @@ from colorama import Fore, Back, Style
 import time
 import check_config
 
-import features.stronghold_finder
-import features.mineshaft_finder
-import features.chunk_blocks
-import features.distance
-import features.volume
-import features.perimeter
-import features.levels_ore
-import features.commands
-import features.worlds
+import features
 
 from configparser import ConfigParser
 config = ConfigParser()
@@ -30,45 +22,35 @@ default = Fore.WHITE
 
 mcpy = """
 
-           .----------------.  .----------------.  .----------------.  .----------------.           
-          | .--------------. || .--------------. || .--------------. || .--------------. |          
-          | | ____    ____ | || |     ______   | || |   ______     | || |  ____  ____  | |          
-          | ||_   \  /   _|| || |   .' ___  |  | || |  |_   __ \   | || | |_  _||_  _| | |          
-          | |  |   \/   |  | || |  / .'   \_|  | || |    | |__) |  | || |   \ \  / /   | |          
-          | |  | |\  /| |  | || |  | |         | || |    |  ___/   | || |    \ \/ /    | |          
-          | | _| |_\/_| |_ | || |  \ `.___.'\  | || |   _| |_      | || |    _|  |_    | |          
-          | ||_____||_____|| || |   `._____.'  | || |  |_____|     | || |   |______|   | |          
-          | |              | || |              | || |              | || |              | |          
-          | '--------------' || '--------------' || '--------------' || '--------------' |          
-           '----------------'  '----------------'  '----------------'  '----------------'           
- .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
-| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
-| |  _________   | || |     ____     | || |     ____     | || |   _____      | || |    _______   | |
-| | |  _   _  |  | || |   .'    `.   | || |   .'    `.   | || |  |_   _|     | || |   /  ___  |  | |
-| | |_/ | | \_|  | || |  /  .--.  \  | || |  /  .--.  \  | || |    | |       | || |  |  (__ \_|  | |
-| |     | |      | || |  | |    | |  | || |  | |    | |  | || |    | |   _   | || |   '.___`-.   | |
-| |    _| |_     | || |  \  `--'  /  | || |  \  `--'  /  | || |   _| |__/ |  | || |  |`\____) |  | |
-| |   |_____|    | || |   `.____.'   | || |   `.____.'   | || |  |________|  | || |  |_______.'  | |
-| |              | || |              | || |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
+███╗   ███╗ ██████╗██████╗ ██╗   ██╗       
+████╗ ████║██╔════╝██╔══██╗╚██╗ ██╔╝       
+██╔████╔██║██║     ██████╔╝ ╚████╔╝        
+██║╚██╔╝██║██║     ██╔═══╝   ╚██╔╝         
+██║ ╚═╝ ██║╚██████╗██║        ██║          
+╚═╝     ╚═╝ ╚═════╝╚═╝        ╚═╝          
+                                           
+████████╗ ██████╗  ██████╗ ██╗     ███████╗
+╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝
+   ██║   ██║   ██║██║   ██║██║     ███████╗
+   ██║   ██║   ██║██║   ██║██║     ╚════██║
+   ██║   ╚██████╔╝╚██████╔╝███████╗███████║
+   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝
+                                           
+
 """
 
 def menu():
     print(fb+"- - - Finder - - -"+default)
-    print("1 · Stronghold Finder")
-    print("2 · Mineshaft Finder")
+    print("1 · Stronghold Finder | 2 · Mineshaft Finder")
 
     print(fb+"- - - Vectors - - -"+default)
-    print("3 · Volume")
-    print("4 · Perimeter")
-    print("5 · Distance")
+    print("3 · Volume | 4 · Perimeter | 5 · Distance")
 
     print(fb+"- - - Other - - -"+default)
-    print("6 · Chunk <=> Blocks")
-    print("7 · Y Levels for ores")
-    print("8 · CanPlace/Destroy command")
-    print("9 · World level.dat editor/reader")
+    print("6 · Chunk <=> Blocks | 7 · Y Levels for ores | 8 · CanPlace/Destroy command")
+
+    print(fb+"- - - Worlds (File related) - - -"+default)
+    print("9 · World level.dat editor/reader | 10 · World stats editor/reader")
 
     choice = True
     while choice:
@@ -94,6 +76,8 @@ def menu():
                 features.commands.canplacedestroy()
             case '9':
                 features.worlds.nbt_onread()
+            case '10':
+                features.worlds.stat_onread()
             
                 
 def main():

@@ -24,7 +24,7 @@ def config_checker():
     name = config_data["name"]
     author = config_data["author"]
 
-    print(name, version, features, author)
+    print(Fore.CYAN+ name, version, features, author)
     config.read("mod.ini")
     if config.has_section("MOD") == True:
         mod_data = config["MOD"]
