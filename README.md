@@ -44,3 +44,5 @@
 
 * <a href="https://github.com/ZeyaTsu/mcpy-tools-new-script-js">MCPy-Tools-new JS files</a>
 * <a href="https://github.com/ZeyaTsu/mcpy-tools">Old MCPy-Tools version</a>
+
+All PR, Mods etc are welcome.
